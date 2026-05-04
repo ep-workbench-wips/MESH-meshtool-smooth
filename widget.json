@@ -1,0 +1,19 @@
+{
+    "num_of_systems": 2,
+    "static_widgets": [
+        {
+            "name": "temp_dir",
+            "widget_type": "QLineEdit",
+            "properties": {
+                "text": "/path/to/same/temp/dir/as/bilayer/widget"
+            }
+        },
+        {
+            "name": "meshtool_executable",
+            "widget_type": "QLineEdit",
+            "properties": {
+                "text": "/usr/local/bin/meshtool"
+            }
+        }
+    ]
+}
