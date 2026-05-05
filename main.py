@@ -20,7 +20,7 @@ with tempfile.TemporaryDirectory() as temp_dir:
         "smooth", "mesh",
         f"-msh={input_mesh}",
         f"-outmsh={output_mesh}",
-        "-iter=500",
+        "-iter=1000",
         "-smth=0.7",
         "-tags=0",
         "-ifmt=carp_txt",
