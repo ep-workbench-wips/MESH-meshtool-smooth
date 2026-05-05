@@ -20,8 +20,8 @@ with tempfile.TemporaryDirectory() as temp_dir:
         "smooth", "mesh",
         f"-msh={input_mesh}",
         f"-outmsh={output_mesh}",
-        "-iter=200",
-        "-smth=0.9",
+        "-iter=100",
+        "-smth=0.8",
         "-tags=0",
         "-ifmt=carp_txt",
         "-ofmt=carp_txt"
@@ -41,7 +41,9 @@ with tempfile.TemporaryDirectory() as temp_dir:
         "clean", "quality",
         f"-msh={output_mesh}",
         "-thr=0.5",
-        f"-outmsh={output_mesh}_final"
+        f"-outmsh={output_mesh}_final",
+        "-ifmt=carp_txt",
+        "-ofmt=carp_txt"
     ])
     print("Quality completed")
     output_case = openep.load_opencarp(
