@@ -50,6 +50,7 @@ with tempfile.TemporaryDirectory() as temp_dir:
         f"{output_mesh}.pts",
         f"{output_mesh}.elem",
         f"{output_mesh}.lon",
+        scale_points=1e-3,
     )
 
 out_cases[f'{case_1}_smooth'] = output_case
